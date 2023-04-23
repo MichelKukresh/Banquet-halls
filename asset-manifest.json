@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c07a962.css",
+    "main.js": "/static/js/main.da239401.js",
+    "static/js/787.6027b93e.chunk.js": "/static/js/787.6027b93e.chunk.js",
+    "static/media/hall2.png": "/static/media/hall2.ed4cb3256a3818f3898c.png",
+    "static/media/hall4.png": "/static/media/hall4.1478442e3ec557e9b495.png",
+    "static/media/hall5.png": "/static/media/hall5.5ce9b52d0d0140990a35.png",
+    "static/media/hall3.png": "/static/media/hall3.2c4b0aadc1da3b2f69b3.png",
+    "static/media/hall1.png": "/static/media/hall1.808ac3ae50d551531f12.png",
+    "static/media/free-icon-dinnerware-5768611.png": "/static/media/free-icon-dinnerware-5768611.daf17f89a14c7205bf79.png",
+    "static/media/free-icon-parking-4952176.png": "/static/media/free-icon-parking-4952176.5326bcb4579dd56236cd.png",
+    "static/media/free-icon-no-waiting-1669959.png": "/static/media/free-icon-no-waiting-1669959.75628a491ab727873c9b.png",
+    "static/media/free-icon-wine-2720240.png": "/static/media/free-icon-wine-2720240.58cebaa68ab998ac6823.png",
+    "static/media/free-icon-discount-2652181.png": "/static/media/free-icon-discount-2652181.fe60a8b2a2ef2cf2d7c6.png",
+    "static/media/free-icon-taxi-4952549.png": "/static/media/free-icon-taxi-4952549.2a206b471de24544917b.png",
+    "static/media/Viberh.svg": "/static/media/Viberh.9d58b95895aac4436dfcc7b2cf2c652f.svg",
+    "static/media/WhatsApph.svg": "/static/media/WhatsApph.9fab7202f0396c55e048b0e5b717bb90.svg",
+    "static/media/Telegramh.svg": "/static/media/Telegramh.2c8149472d33278f70a6d56f50081fac.svg",
+    "static/media/logo-livestream-svgrepo-com.svg": "/static/media/logo-livestream-svgrepo-com.4247147a7a5896d8d515917dd80dfd6e.svg",
+    "index.html": "/index.html",
+    "main.9c07a962.css.map": "/static/css/main.9c07a962.css.map",
+    "main.da239401.js.map": "/static/js/main.da239401.js.map",
+    "787.6027b93e.chunk.js.map": "/static/js/787.6027b93e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c07a962.css",
+    "static/js/main.da239401.js"
+  ]
+}
