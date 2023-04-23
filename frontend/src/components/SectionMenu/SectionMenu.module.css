@@ -30,8 +30,7 @@
 
 .listDiscription {
   height: 20px;
-  margin-bottom: 5px;
-  /* border: solid 1px red; */
+  margin-bottom: 5px;  
 }
 
 @media (max-width: 500px) {
