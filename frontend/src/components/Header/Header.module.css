@@ -1,0 +1,119 @@
+.wrapper {
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+    
+    
+}
+
+.container_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(219, 214, 214);
+    padding: 5px 0px 5px 0px;
+}
+
+.container_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px 5px 0px;
+
+}
+
+.navigation {
+    display: flex;
+}
+
+.lists {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0px;
+    
+}
+
+.list {
+    margin-left: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.whatsapp {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.whatsapp::before {
+    content: "" ;
+    height: 20px;
+    width: 20px;   
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    background: url(../../images/WhatsApph.svg) ;
+    background-size: cover;
+}
+
+.telegram {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.telegram::before {
+    content: "" ;
+    height: 20px;
+    width: 20px;   
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    background: url(../../images/Telegramh.svg) ;
+    background-size: cover;
+}
+
+.viber {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.viber::before {
+    content: "" ;
+    height: 20px;
+    width: 20px;   
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    background: url(../../images/Viberh.svg) ;
+    background-size: cover;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: solid 1px #0d6efd;
+}
+
+.logo {
+    height: 40px;
+}
+
+
