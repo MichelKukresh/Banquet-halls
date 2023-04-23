@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 
 // Слушаем 3000 порт
-const { PORT = 3005 } = process.env;
+const { PORT = 3006 } = process.env;
 const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
 
