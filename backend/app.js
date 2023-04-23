@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // Слушаем 3000 порт
 const { PORT = 3006 } = process.env;
-const { celebrate, Joi } = require('celebrate');
+// const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
 
 // импортируем устанавливаем лимитер для исключения DoS атак npm i express-rate-limit
@@ -18,14 +18,14 @@ const helmet = require('helmet');
 
 // logger
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-const { createUser, login } = require('./controllers/users');
+// const { createUser, login } = require('./controllers/users');
 const routesOffer = require('./routes/offer');
 const routesContact = require('./routes/contact');
-const routesCards = require('./routes/cards');
-const routesUsers = require('./routes/users');
-const routesBus = require('./routes/bus');
-// const auth = require('./middlewares/auth');
-const { regexLink } = require('./util/utilConst');
+// const routesCards = require('./routes/cards');
+// const routesUsers = require('./routes/users');
+// const routesBus = require('./routes/bus');
+// // const auth = require('./middlewares/auth');
+// const { regexLink } = require('./util/utilConst');
 const ErrorNotFound = require('./errors/ErrorNotFound');
 const centralizedErrorHandler = require('./middlewares/centralizedErrorHandler');
 // const { putSpeedDay } = require('./controllers/bus');
@@ -54,29 +54,29 @@ app.use(helmet());
 // !!важно до роутов
 app.use(requestLogger); // подключаем логгер запросов
 
-// требуется удалить после ревью
-app.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// // требуется удалить после ревью
+// app.get('/crash-test', () => {
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
-app.post('/signup', celebrate({
-  body: Joi.object().keys({
-    email: Joi.string().required().email(),
-    password: Joi.string().required(),
-    name: Joi.string().min(2).max(30),
-    about: Joi.string().min(2).max(30),
-    avatar: Joi.string().regex(regexLink),
-  }),
-}), createUser);
+// app.post('/signup', celebrate({
+//   body: Joi.object().keys({
+//     email: Joi.string().required().email(),
+//     password: Joi.string().required(),
+//     name: Joi.string().min(2).max(30),
+//     about: Joi.string().min(2).max(30),
+//     avatar: Joi.string().regex(regexLink),
+//   }),
+// }), createUser);
 
-app.post('/signin', celebrate({
-  body: Joi.object().keys({
-    email: Joi.string().required().email(),
-    password: Joi.string().required(),
-  }),
-}), login);
+// app.post('/signin', celebrate({
+//   body: Joi.object().keys({
+//     email: Joi.string().required().email(),
+//     password: Joi.string().required(),
+//   }),
+// }), login);
 
 // app.use(auth);
 
@@ -88,11 +88,11 @@ app.post('/signin', celebrate({
 // setInterval(intervalFunc, 10000);
 
 // цикл одного раза для тестов
-function speedDay() {
-  console.log(Math.floor(+new Date() / 1000));
-  // putSpeedDay(Math.floor(+new Date() / 1000));
-}
-speedDay();
+// function speedDay() {
+//   console.log(Math.floor(+new Date() / 1000));
+//   // putSpeedDay(Math.floor(+new Date() / 1000));
+// }
+// speedDay();
 
 app.use('/offer', routesOffer);
 // {
@@ -111,11 +111,11 @@ app.use('/contact', routesContact);
 //   "comment": "Хочу заказать большой зал будет проводится банкет"
 // }
 
-app.use('/cards', routesCards); // запускаем
+// app.use('/cards', routesCards); // запускаем
 
-app.use('/users', routesUsers);
+// app.use('/users', routesUsers);
 
-app.use('/bus', routesBus);
+// app.use('/bus', routesBus);
 
 // !!важно до обработчика ошибок, но после маршрутов
 app.use(errorLogger); // подключаем логгер ошибок
