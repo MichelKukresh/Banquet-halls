@@ -37,24 +37,25 @@ export const Header = () => {
   return (
     <header className={styles.wrapper}>
       <div className={styles.container_top}>
+      <a className={styles.logoMobile} ><img className={styles.logo} src={logo}></img></a>
         <a className={styles.listt}>+79998887755</a>
         <ul className={styles.lists}>
           <li className={styles.list}>
-            <a onClick={() => handleWhatsApp()} className={styles.whatsapp}>WhatSapp</a>
+            <a onClick={() => handleWhatsApp()} className={styles.whatsapp}> <span className={styles.textSocial}>WhatSapp</span> </a>
           </li>
           <li className={styles.list}>
-            <a className={styles.telegram}>Telegram</a>
+            <a className={styles.telegram}><span className={styles.textSocial}>Telegram</span></a>
           </li>
           <li className={styles.list}>
-            <a className={styles.viber}>Viber</a>
+            <a className={styles.viber}> <span className={styles.textSocial}>Viber</span></a>
           </li>
         </ul>
       </div>
 
       <div className={styles.container_bottom}>
-        <a ><img className={styles.logo} src={logo}></img></a>
+        <a className={styles.logoDesctop} ><img className={styles.logo} src={logo}></img></a>
         <nav className={styles.navigation}>
-          <ul className={styles.lists}>
+          <ul className={`${styles.lists} ${styles.listsBottom}`}>
             <li className={styles.list}>
               <a className={styles.link} onClick={handleToSectionBanner}>Главная</a>
             </li>

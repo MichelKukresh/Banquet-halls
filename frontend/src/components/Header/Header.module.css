@@ -49,6 +49,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    min-height: 22px;
     
 }
 
@@ -116,4 +117,71 @@
     height: 40px;
 }
 
+.logoMobile {
+    display: none;
 
+}
+
+.logoDesctop {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_top {
+        
+        align-items: center;
+    }
+    .container_bottom {
+        
+        flex-direction: column;
+        
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .lists {
+        
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+        
+        
+    }
+
+    .textSocial {
+        display: none;
+    }
+
+    .viber::before {
+        top: -11px;
+    }
+
+    .whatsapp::before {
+        top: -11px;
+    }
+
+    .telegram::before {
+        top: -11px;
+    }
+
+    .logoMobile {
+        display: block;
+    
+    }
+    
+    .logoDesctop {
+        display: none;
+    }
+
+
+    .listsBottom {
+        flex-direction: column;
+    }
+
+}

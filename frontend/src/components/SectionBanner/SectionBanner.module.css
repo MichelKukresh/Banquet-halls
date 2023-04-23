@@ -1,31 +1,79 @@
 .wrapper {
-  height: calc(100vh - 121px );
-  width: 100vw;
+  height: calc(100vh - 121px);
+  width: 100%;
   background-image: url("https://i3.photo.2gis.com/images/branch/28/3940649720181432_1c2d.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   color: aliceblue;
-  
+  backdrop-filter: blur(5px);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .container_content {
-   max-width: 1280px; 
-   display: flex;
-   flex-direction: row;
-   flex-direction: row;
-   justify-content: space-between;
-   margin: 12vw auto 0px auto;
-   padding: 0px 20px 0px 20px;
-  
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5vw auto 0px auto;
+  padding: 0px 20px 0px 20px;
 }
 
 .container_text {
-  max-width: 500px;
+  max-width: 700px;
 }
 
+.title {
+  font-size: 68px;
+  font-weight: 600;
+}
 .paragraph {
-  
+  font-size: 22px;
+  font-weight: 300;
+}
+
+@media (max-width: 1070px) {
+  .title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .container_text {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    height: calc(100vh - 92px);
+  }
+  .container_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 700px) {
+  .container_content {
+    margin: 100px auto 0px auto;
+  }
+
+  .wrapper {
+    height: calc(100vh - 23px);
+  }
 }

@@ -53,7 +53,7 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className={styles.containerSocial}>
           <img className={styles.social} src={WS} onClick={() => handleWhatsApp()}></img>
           <img className={styles.social} src={TL}></img>
           <img className={styles.social} src={VI}></img>
