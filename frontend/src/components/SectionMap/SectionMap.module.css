@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contaimer_desctop {
+    display: block;
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.contaimer_mobile {
+    display: none;
+}
+
+@media (max-width: 750px) {
+  .contaimer_desctop {
+    display: none;
+  }
+
+  .contaimer_mobile {
+    display: none;
+    width: 100%;
+    display: flex;
+  }
+}

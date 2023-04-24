@@ -1,7 +1,7 @@
 // отправка заказа
 const postOfferToMail = (dataOffer) => {
     
-  return fetch(`http://51.250.110.232/offer`, {
+  return fetch(`https://pit-stop.shop/offer`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,6 +18,7 @@ const postOfferToMail = (dataOffer) => {
       return res.json();
     }
     // если ошибка, отклоняем промис
+    alert("Попробуйте еще раз!")
     return Promise.reject(`Ошибка: ${res.status}`);
   });
 };
@@ -25,7 +26,7 @@ const postOfferToMail = (dataOffer) => {
 // отправка контактов
 const postContactToMail = (dataContact) => {
     
-    return fetch(`http://51.250.110.232/contact`, {
+    return fetch(`https://pit-stop.shop/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,6 +44,7 @@ const postContactToMail = (dataContact) => {
         return res.json();
       }
       // если ошибка, отклоняем промис
+      alert("Попробуйте еще раз!")
       return Promise.reject(`Ошибка: ${res.status}`);
     });
   };

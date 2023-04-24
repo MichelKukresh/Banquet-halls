@@ -1,6 +1,6 @@
-{
-  "name": "banquet-halls",
+{  
   "homepage": "https://michelkukresh.github.io/banquet-halls/",
+  "name": "banquet-halls",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

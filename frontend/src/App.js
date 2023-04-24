@@ -9,37 +9,30 @@ import { SectionHalls } from "./components/SectionHalls/SectionHalls";
 import { SectionMenu } from "./components/SectionMenu/SectionMenu";
 import { SectionContacts } from "./components/SectionContacts/SectionContacts";
 import { Footer } from "./components/Footer/Footer";
+import { SectionMap } from "./components/SectionMap/SectionMap";
 
 export const App = () => {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <div className={styles.wrapper}>
-              <Header></Header>
-              <Main>
-                <SectionBanner></SectionBanner>
-                <SectionAdvantages></SectionAdvantages>
-                <SectionHalls></SectionHalls>
-                <SectionMenu></SectionMenu>
-                <SectionContacts></SectionContacts>
-              </Main>
-              <Footer></Footer>
-            </div>
-          </>
-        }
-      ></Route>
-      {/* <Route
-        path="/halls"
-        element={
-          <>
-            <Header></Header>
-            <Main><SectionHalls></SectionHalls></Main>
-          </>
-        }
-      ></Route> */}
-    </Routes>
+    <div className={styles.wrapper}>
+      <Header></Header>
+      <Main>
+        <SectionBanner></SectionBanner>
+        <SectionAdvantages></SectionAdvantages>
+        <SectionHalls></SectionHalls>
+        <SectionMenu></SectionMenu>
+        <SectionContacts></SectionContacts>
+        <SectionMap></SectionMap>
+      </Main>
+      <Footer></Footer>
+    </div>
+    // <Routes>
+    //   <Route
+    //     path="/"
+    //     element={
+    //       <>
+    //       </>
+    //     }
+    //   ></Route>
+    // </Routes>
   );
 };
