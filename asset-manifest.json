@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banquet-halls/static/css/main.3028a1d6.css",
-    "main.js": "/banquet-halls/static/js/main.a5db9c45.js",
+    "main.css": "/banquet-halls/static/css/main.bc24dc0c.css",
+    "main.js": "/banquet-halls/static/js/main.d4210525.js",
     "static/js/787.6027b93e.chunk.js": "/banquet-halls/static/js/787.6027b93e.chunk.js",
     "static/media/hall2.png": "/banquet-halls/static/media/hall2.ed4cb3256a3818f3898c.png",
     "static/media/hall4.png": "/banquet-halls/static/media/hall4.1478442e3ec557e9b495.png",
@@ -19,12 +19,12 @@
     "static/media/Telegramh.svg": "/banquet-halls/static/media/Telegramh.2c8149472d33278f70a6d56f50081fac.svg",
     "static/media/logo-livestream-svgrepo-com.svg": "/banquet-halls/static/media/logo-livestream-svgrepo-com.4247147a7a5896d8d515917dd80dfd6e.svg",
     "index.html": "/banquet-halls/index.html",
-    "main.3028a1d6.css.map": "/banquet-halls/static/css/main.3028a1d6.css.map",
-    "main.a5db9c45.js.map": "/banquet-halls/static/js/main.a5db9c45.js.map",
+    "main.bc24dc0c.css.map": "/banquet-halls/static/css/main.bc24dc0c.css.map",
+    "main.d4210525.js.map": "/banquet-halls/static/js/main.d4210525.js.map",
     "787.6027b93e.chunk.js.map": "/banquet-halls/static/js/787.6027b93e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3028a1d6.css",
-    "static/js/main.a5db9c45.js"
+    "static/css/main.bc24dc0c.css",
+    "static/js/main.d4210525.js"
   ]
 }
